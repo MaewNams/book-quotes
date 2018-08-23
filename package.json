@@ -5,12 +5,34 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
+    "react-redux": "^5.0.7",
+    "react-router5": "^6.1.0",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.4.2",
+    "redux": "^4.0.0",
+    "redux-router5": "^6.0.2",
+    "redux-saga": "^0.16.0",
+    "redux-saga-testing": "^1.0.5",
+    "reselect": "^3.0.1",
+    "router5": "^6.4.0",
+    "router5-helpers": "^5.2.1",
+    "yarn": "^1.9.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "create-state": "yo @tanawat/redux-plus:create-state --force",
+    "create-action": "yo @tanawat/redux-plus:create-action --force",
+    "create-effect": "yo @tanawat/redux-plus:create-effect --force",
+    "create-selector": "yo @tanawat/redux-plus:create-selector --force",
+    "create-channel": "yo @tanawat/redux-plus:create-channel --force",
+    "create-reducer": "yo @tanawat/redux-plus:create-reducer --force"
+  },
+  "devDependencies": {
+    "@tanawat/generator-redux-plus": "^1.0.1",
+    "flow-bin": "^0.78.0",
+    "yo": "^2.0.5"
   }
 }
