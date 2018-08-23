@@ -1,13 +1,15 @@
 // @flow
+import type {Quote} from '../../state/book/types'
+
 import React, { PureComponent } from 'react'
 
 type Props = {
-
+  quote: Quote
 }
 
 class Card extends PureComponent<Props> {
   render() {
-    const { } = this.props
+    const {quote} = this.props
     return (
       <div className="card">
       <div classNameName="card-header">
@@ -15,10 +17,13 @@ class Card extends PureComponent<Props> {
           <div className="hero-body">
             <div className="container">
               <h1 className="title">
-                Primary title
+                " {quote.sentence} "
               </h1>
               <h2 className="subtitle">
-                Primary subtitle
+                {quote.character.name} {quote.character.surname}, {quote.character.nickName} 
+              </h2>
+              <h2 className="subtitle">
+               - page {quote.page}, {quote.book.name}
               </h2>
             </div>
           </div>
@@ -32,8 +37,8 @@ class Card extends PureComponent<Props> {
             </figure>
           </div>
           <div className="media-content">
-            <p className="title is-4">John Smith</p>
-            <p className="subtitle is-6">@johnsmith</p>
+            <p className="title is-4">{quote.book.name}</p>
+            <p className="subtitle is-6">by {quote.book.writer.name}</p>
           </div>
         </div>
     
