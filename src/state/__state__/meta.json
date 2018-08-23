@@ -1,3 +1,12 @@
 {
-  "states": {}
+  "states": {
+    "book": {
+      "name": "book",
+      "flowType": "BookState",
+      "actions": {},
+      "channels": {},
+      "effects": {},
+      "reducers": {}
+    }
+  }
 }
