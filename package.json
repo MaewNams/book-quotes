@@ -23,6 +23,7 @@
     "reselect": "^3.0.1",
     "router5": "^6.4.0",
     "router5-helpers": "^5.2.1",
+    "storybook": "^1.0.0",
     "yarn": "^1.9.4"
   },
   "scripts": {
@@ -35,11 +36,16 @@
     "create-effect": "yo @tanawat/redux-plus:create-effect --force",
     "create-selector": "yo @tanawat/redux-plus:create-selector --force",
     "create-channel": "yo @tanawat/redux-plus:create-channel --force",
-    "create-reducer": "yo @tanawat/redux-plus:create-reducer --force"
+    "create-reducer": "yo @tanawat/redux-plus:create-reducer --force",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
     "@tanawat/generator-redux-plus": "^1.0.1",
     "flow-bin": "^0.78.0",
-    "yo": "^2.0.5"
+    "yo": "^2.0.5",
+    "@storybook/react": "^3.4.10",
+    "@storybook/addon-actions": "^3.4.10",
+    "@storybook/addon-links": "^3.4.10"
   }
 }
