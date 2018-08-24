@@ -12,7 +12,11 @@
         }
       },
       "channels": {},
-      "effects": {},
+      "effects": {
+        "enterHome": {
+          "name": "enterHome"
+        }
+      },
       "reducers": {},
       "selectors": {
         "getQuoteList": {

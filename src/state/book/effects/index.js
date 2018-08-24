@@ -3,6 +3,8 @@
 
 // @flow
 
+import {enterHomeEffect} from './enterHome'
 
 export const bookEffects = [
+  enterHomeEffect,
 ]
