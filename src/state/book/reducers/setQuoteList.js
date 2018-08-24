@@ -8,5 +8,6 @@ export function setQuoteListReducer(state: BookState, action: Action<SetQuoteLis
 
   return {
     ...state,
+    quoteList: action.payload.quoteList
   }
 }
