@@ -3,6 +3,8 @@
 
 // @flow
 
+import {setQuoteList} from './setQuoteList'
 
 export const bookActions = {
+  setQuoteList,
 }

@@ -3,7 +3,14 @@
     "book": {
       "name": "book",
       "flowType": "BookState",
-      "actions": {},
+      "actions": {
+        "setQuoteList": {
+          "name": "setQuoteList",
+          "flowType": "SetQuoteList",
+          "id": "book/SET_QUOTE_LIST",
+          "reducer": true
+        }
+      },
       "channels": {},
       "effects": {},
       "reducers": {}
