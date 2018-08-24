@@ -1,4 +1,3 @@
-// @flow
 import type {ApplicationState} from '../state/types'
 import type {Route} from '../router/types'
 
