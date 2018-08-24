@@ -20,10 +20,11 @@ const createRoute = (name, path, children) => ({
 
 const routes = [
   createRoute('init', '/init'),
+  createRoute('home', '/home')
 ]
 
 const options = {
-  defaultRoute: 'init'
+  defaultRoute: 'home'
 }
 
 export const router = createRouter(routes, options)
