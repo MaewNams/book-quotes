@@ -25,11 +25,12 @@ export type Quote = {
   book: Book,
   character: Character,
   sentence: string,
+  description: string,
   page: number,
 }
 
 
 
 export type BookState = {
-
+  quoteList: Array<Quote>
 }
