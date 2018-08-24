@@ -32,6 +32,7 @@ storiesOf('Card', module)
       book: book,
       character: character,
       sentence: 'What your is mine, what mine is my own',
+      description: 'Alice said this quote when she meet the hero who try to convince her to stop the war. Alice rejected, she declare her reson to continue the war which is the quote',
       page: 73
     }
     return ( <Card quote={quote} /> )

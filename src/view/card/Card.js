@@ -11,20 +11,20 @@ class Card extends PureComponent<Props> {
   render() {
     const {quote} = this.props
     return (
-      <div className="card">
+      <div className="card-content">
       <div classNameName="card-header">
         <section className="hero is-primary">
           <div className="hero-body">
             <div className="container">
               <h1 className="title">
-                " {quote.sentence} "
+                {quote.sentence}
               </h1>
-              <h2 className="subtitle">
+              <h4 className="subtitle">
                 {quote.character.name} {quote.character.surname}, {quote.character.nickName} 
-              </h2>
-              <h2 className="subtitle">
-               - page {quote.page}, {quote.book.name}
-              </h2>
+              </h4>
+              <h4 className="subtitle">
+               - page {quote.page}
+              </h4>
             </div>
           </div>
         </section>
@@ -43,9 +43,7 @@ class Card extends PureComponent<Props> {
         </div>
     
         <div className="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-          <a href="#">#css</a> <a href="#">#responsive</a>
+          {quote.description}
           <br />
           <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
         </div>
