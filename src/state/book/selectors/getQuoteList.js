@@ -1,14 +1,17 @@
 // @flow
 
 import type {ApplicationState} from '../../types'
-import type {BookState} from '../types'
+import type {
+  BookState,
+  Quote,
+} from '../types'
 
-export function getQuoteList(appState: ApplicationState): ApplicationState {
-  return appState
+export function getQuoteList(appState: ApplicationState): Array<Quote> {
+  return _getQuoteList(appState.book)
 }
 
-function _getQuoteList(state: BookState): BookState {
-  return state
+function _getQuoteList(state: BookState): Array<Quote> {
+  return state.quoteList
 }
 
 getQuoteList.internal = _getQuoteList
